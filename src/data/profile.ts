@@ -45,7 +45,7 @@ export const profile = {
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/liem-tran1/' },
     { label: 'Résumé', href: '/LiemResume.pdf' },
   ] satisfies ProfileLink[],
-  primaryTechnologies: ['AWS', 'Kafka', 'Elasticsearch', 'SQS', 'Java', 'Python', 'Node.js'],
+  primaryTechnologies: ['AWS', 'Kafka', 'Java', 'Spring Boot', 'Elasticsearch', 'SQS', 'Python', 'Node.js', 'React'],
   capabilities: [
     {
       index: '01',
