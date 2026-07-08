@@ -130,11 +130,6 @@ export default function Home() {
           <div className="sectionHeading">
             <p className="sectionNumber">01 / Expertise</p>
             <h2 id="expertise-title">Backend first. Product aware.</h2>
-            <p>
-              I enjoy the machinery that makes software dependable—how services communicate,
-              recover, surface data, and stay understandable as they grow. Pick a lane and poke
-              around.
-            </p>
           </div>
 
           <InteractiveExpertise capabilities={profile.capabilities} />
