@@ -139,9 +139,6 @@ export default function Home() {
           <div className="sectionHeading experienceHeading">
             <p className="sectionNumber">02 / Experience</p>
             <h2 id="experience-title">The receipts.</h2>
-            <p>
-              Real systems, measurable outcomes, and the technology choices that connected the two.
-            </p>
           </div>
 
           <div className="experienceList">
