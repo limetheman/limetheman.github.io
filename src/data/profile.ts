@@ -36,16 +36,26 @@ export type Project = {
 
 export const profile = {
   name: 'Liem Tran',
-  role: 'Backend & Cloud Engineer',
+  role: 'Software Engineer',
   location: 'Seattle, Washington',
   summary:
     'I build reliable backend systems and cloud infrastructure, with a focus on distributed services, event-driven architecture, and search.',
   links: [
     { label: 'GitHub', href: 'https://github.com/limetheman' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/liem-tran1/' },
-    { label: 'Résumé', href: '/LiemResume.pdf' },
+    { label: 'Resume', href: '/LiemResume.pdf' },
   ] satisfies ProfileLink[],
-  primaryTechnologies: ['AWS', 'Kafka', 'Java', 'Spring Boot', 'Elasticsearch', 'SQS', 'Python', 'Node.js', 'React'],
+  primaryTechnologies: [
+    'AWS',
+    'Kafka',
+    'Java',
+    'Spring Boot',
+    'Elasticsearch',
+    'SQS',
+    'Python',
+    'Node.js',
+    'React',
+  ],
   capabilities: [
     {
       index: '01',

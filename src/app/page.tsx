@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { InteractiveExpertise } from '@/components/InteractiveExpertise';
+import { SectionNavigation } from '@/components/SectionNavigation';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { TypewriterIntro } from '@/components/TypewriterIntro';
 import { profile } from '@/data/profile';
@@ -38,17 +39,12 @@ export default function Home() {
           LT<span aria-hidden="true">/</span>
         </a>
 
-        <nav className="navigation" aria-label="Primary navigation">
-          <a href="#expertise">Expertise</a>
-          <a href="#experience">Experience</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <SectionNavigation />
 
         <div className="headerActions">
           <ThemeToggle />
           <a className="headerResume" href="/LiemResume.pdf" target="_blank">
-            Résumé <Arrow />
+            Resume <Arrow />
           </a>
         </div>
       </header>
@@ -57,9 +53,6 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="heroGrid">
             <div className="heroCopy">
-              <p className="eyebrow">
-                <span aria-hidden="true">✦</span> {profile.name} / {profile.role}
-              </p>
               <h1 id="hero-title">Liem Tran</h1>
               <TypewriterIntro />
 
@@ -68,7 +61,7 @@ export default function Home() {
                   See my experience <span aria-hidden="true">↓</span>
                 </a>
                 <a href="/LiemResume.pdf" target="_blank">
-                  Read my résumé <Arrow />
+                  Read my resume <Arrow />
                 </a>
               </div>
 
@@ -103,33 +96,21 @@ export default function Home() {
                     priority
                   />
                 </div>
-                <div className="portraitSticker" aria-hidden="true">
-                  Cloud curious!
-                </div>
-                <div className="portraitCallout portraitCalloutTop">
-                  <span>Currently</span>
-                  <strong>Software Engineer @ Chewy</strong>
-                </div>
-                <div className="portraitCallout portraitCalloutBottom">
-                  <span>Ask me about</span>
-                  <strong>Event-driven systems</strong>
-                </div>
               </figure>
             </div>
           </div>
 
           <div className="technologyRail" aria-label="Primary technologies">
-            <span className="railLabel">Things I speak fluently →</span>
+            <span className="railLabel">Technologies →</span>
             {profile.primaryTechnologies.map((technology) => (
               <span key={technology}>{technology}</span>
             ))}
           </div>
         </section>
 
-        <section className="section expertise" id="expertise" aria-labelledby="expertise-title">
+        <section className="section expertise" id="skills" aria-labelledby="skills-title">
           <div className="sectionHeading">
-            <p className="sectionNumber">01 / Expertise</p>
-            <h2 id="expertise-title">Backend first. Product aware.</h2>
+            <h2 id="skills-title">Skills</h2>
           </div>
 
           <InteractiveExpertise capabilities={profile.capabilities} />
@@ -137,16 +118,12 @@ export default function Home() {
 
         <section className="section experience" id="experience" aria-labelledby="experience-title">
           <div className="sectionHeading experienceHeading">
-            <p className="sectionNumber">02 / Experience</p>
-            <h2 id="experience-title">The receipts.</h2>
+            <h2 id="experience-title">Experience</h2>
           </div>
 
           <div className="experienceList">
-            {profile.experience.map((experience, index) => (
+            {profile.experience.map((experience) => (
               <article className="experienceCard" key={`${experience.company}-${experience.role}`}>
-                <p className="experienceIndex" aria-hidden="true">
-                  0{index + 1}
-                </p>
                 <div className="experienceMeta">
                   <div className="companyImage">
                     <Image
@@ -182,15 +159,13 @@ export default function Home() {
 
         <section className="section work" id="work" aria-labelledby="work-title">
           <div className="sectionHeading workHeading">
-            <p className="sectionNumber">03 / Selected work</p>
-            <h2 id="work-title">Side quests with a purpose.</h2>
+            <h2 id="work-title">Projects</h2>
           </div>
 
           <div className="projectList">
-            {profile.projects.map((project, index) => (
+            {profile.projects.map((project) => (
               <article className="project" key={project.name}>
                 <div className="projectTopline">
-                  <p className="projectNumber">0{index + 1}</p>
                   <span>{project.badge}</span>
                 </div>
                 <div className="projectImage">
@@ -224,14 +199,9 @@ export default function Home() {
         </section>
 
         <section className="contact" id="contact" aria-labelledby="contact-title">
-          <p className="sectionNumber">04 / Connect</p>
           <div className="contactLayout">
             <div className="contactIntro">
-              <h2 id="contact-title">Let&apos;s build something dependable.</h2>
-              <div className="contactLocation">
-                <span className="statusDot" aria-hidden="true" />
-                Based in {profile.location}
-              </div>
+              <h2 id="contact-title">Connect with me.</h2>
             </div>
 
             <div className="socialIconGrid" aria-label="Profile links">

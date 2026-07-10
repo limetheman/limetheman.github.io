@@ -3,9 +3,8 @@ import type { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Liem Tran — Backend & Cloud Engineer',
-  description:
-    'Backend and cloud engineering portfolio focused on AWS, distributed systems, event-driven architecture, and search.',
+  title: 'Liem Tran',
+  description: 'Software engineer portfolio of Liem Tran.',
 };
 
 type RootLayoutProps = Readonly<{

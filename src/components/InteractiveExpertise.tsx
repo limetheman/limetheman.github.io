@@ -29,7 +29,6 @@ export function InteractiveExpertise({ capabilities }: InteractiveExpertiseProps
               role="tab"
               type="button"
             >
-              <span>{capability.index}</span>
               {capability.title}
               <span aria-hidden="true">{isActive ? '●' : '○'}</span>
             </button>
