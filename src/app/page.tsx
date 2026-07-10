@@ -54,6 +54,7 @@ export default function Home() {
           <div className="heroGrid">
             <div className="heroCopy">
               <h1 id="hero-title">Liem Tran</h1>
+              <p className="heroRole">Software Engineer at Chewy</p>
               <TypewriterIntro />
 
               <div className="heroActions">
@@ -111,6 +112,10 @@ export default function Home() {
         <section className="section expertise" id="skills" aria-labelledby="skills-title">
           <div className="sectionHeading">
             <h2 id="skills-title">Skills</h2>
+            <p>
+              Hands-on experience across cloud processing, event platforms, search, and service
+              architecture.
+            </p>
           </div>
 
           <InteractiveExpertise capabilities={profile.capabilities} />

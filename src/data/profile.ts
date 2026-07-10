@@ -39,7 +39,7 @@ export const profile = {
   role: 'Software Engineer',
   location: 'Seattle, Washington',
   summary:
-    'I build reliable backend systems and cloud infrastructure, with a focus on distributed services, event-driven architecture, and search.',
+    'I design and deliver event-driven systems for high-volume subscription and order workflows.',
   links: [
     { label: 'GitHub', href: 'https://github.com/limetheman' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/liem-tran1/' },
@@ -61,37 +61,37 @@ export const profile = {
       index: '01',
       title: 'Cloud systems',
       description:
-        'Designing services around managed cloud infrastructure, with clear operational boundaries and room to scale.',
+        'Designed and implemented an event-driven processing system to consolidate high-volume subscription activity on AWS.',
       technologies: ['AWS', 'SQS', 'Cloud infrastructure'],
       evidence:
-        'At Chewy, I built serverless order processing across 18 fulfillment centers and an event consolidation system handling 100K+ daily events.',
+        'The consolidation system processes 100K+ events daily and unlocked $15M/year in revenue.',
     },
     {
       index: '02',
       title: 'Event-driven architecture',
       description:
-        'Building asynchronous workflows and data pipelines that keep services decoupled and resilient.',
+        'Led the technical design and delivery of an order-status platform that turns lifecycle events into operational visibility.',
       technologies: ['Kafka', 'SQS', 'Distributed systems'],
       evidence:
-        'At Chewy, I worked across Kafka and SQS workflows ranging from asynchronous order processing to a platform ingesting 1M+ events each day.',
+        'The platform ingests 1M+ events a day through Kafka, EKS, and Elasticsearch and supports four or more partner teams.',
     },
     {
       index: '03',
       title: 'Search & data',
       description:
-        'Making application data useful through thoughtful indexing, retrieval, and backend service design.',
+        'Implemented search and data layers that make operational and navigation data easier to retrieve and understand.',
       technologies: ['Elasticsearch', 'REST APIs', 'Databases'],
       evidence:
-        'I used Elasticsearch for order lifecycle visibility, DynamoDB for cloud data access, and Neo4j for campus navigation data.',
+        'Used Elasticsearch for order lifecycle visibility, DynamoDB for cloud data access, and Neo4j for campus navigation data.',
     },
     {
       index: '04',
-      title: 'Product delivery',
+      title: 'Service architecture',
       description:
-        'Connecting dependable backend foundations to accessible interfaces and complete user experiences.',
-      technologies: ['React', 'TypeScript', 'Next.js'],
+        'Designed REST APIs and asynchronous processing workflows that connect queues, services, and cloud infrastructure.',
+      technologies: ['Java', 'Spring Boot', 'ECS'],
       evidence:
-        'At Chewy, I paired backend event data with a React and Next.js visualization platform used to understand the order lifecycle.',
+        'Reduced order processing from 30 minutes to 5 minutes while doubling message throughput.',
     },
   ] satisfies Capability[],
   experience: [

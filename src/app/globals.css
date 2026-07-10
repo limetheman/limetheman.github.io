@@ -27,7 +27,7 @@
   --signal: #bc9385;
   --pink: #caa0aa;
   --blue: #9daeb1;
-  --purple: #b8acb6;
+  --purple: #a78a8f;
   --tech-1: #4a3c45;
   --tech-2: #3b4d54;
   --tech-3: #514a38;
@@ -245,6 +245,13 @@ main {
   font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.9;
+}
+
+.heroRole {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 700;
 }
 
 .introduction {
@@ -488,6 +495,13 @@ main {
   line-height: 0.95;
 }
 
+.sectionHeading > p {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .expertiseConsole {
   display: grid;
   grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1.7fr);
@@ -686,7 +700,7 @@ main {
 }
 
 :root[data-theme='dark'] .experienceCard {
-  background: rgba(45, 37, 70, 0.88);
+  background: rgba(72, 57, 59, 0.94);
 }
 
 .experienceCard:nth-child(even) {
@@ -1072,7 +1086,7 @@ main {
 }
 
 :root[data-theme='dark'] .socialCard:nth-child(3) {
-  background: #5a484f;
+  background: #59484a;
 }
 
 .socialCard:hover {
