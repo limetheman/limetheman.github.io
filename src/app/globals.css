@@ -247,13 +247,6 @@ main {
   line-height: 0.9;
 }
 
-.heroRole {
-  margin: 0 0 0.75rem;
-  color: var(--accent);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  font-weight: 700;
-}
-
 .introduction {
   max-width: 39rem;
   min-height: 1.4em;

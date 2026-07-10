@@ -54,7 +54,6 @@ export default function Home() {
           <div className="heroGrid">
             <div className="heroCopy">
               <h1 id="hero-title">Liem Tran</h1>
-              <p className="heroRole">Software Engineer at Chewy</p>
               <TypewriterIntro />
 
               <div className="heroActions">
