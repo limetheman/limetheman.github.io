@@ -166,7 +166,7 @@ export const profile = {
       image: '/BackToHue.png',
       imageAlt: 'Back To Hue application',
       role: 'Mobile Developer',
-      badge: '2nd place · LAHacks 2023',
+      badge: 'November 2022 – June 2023',
       description: 'A mobile color experience built with a realtime application backend.',
       highlights: [
         'Collaborated on a six-person team across engineering, design, and product.',
